@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BudgetPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>MyFinance Tracker</h1>
+        <div class="theme-toggle">
+        </div>
+    </div>
+</header>
+<main>
+    <!-- Expenses Section -->
+    <section class="dashboard">
+        <div class="card expenses">
+            <h2>Expenses</h2>
+            <p id="Expense">£0.00</p>
+        </div>
+        <div class="card income">
+            <h2>Income</h2>
+            <p id="Income">£0.00</p>
+        </div>
+    </section>
+    <!-- Add Transaction Form -->
+    <section class="add-transaction">
+        <h2>Add Transaction</h2>
+        <form id="transactionForm">
+            <input type="date" id="date" required>
+            <input type="text" id="category" placeholder="Category" required>
+            <select id="type" required>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <div class="form-actions">
+                <button type="submit">Add Transaction</button>
+                <button type="button" id="saveButton">Save Record</button>
+            </div>
+        </form>
+    </section>
+    <!-- Recent Transactions Section -->
+    <section class="recent-transactions">
+        <h2>Recent Transactions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="transactionList"></tbody>
+        </table>
+    </section>
+</main>
+<footer>
+    <p>Built by [Abdul Fattah Sayed]. View my <a href="#">GitHub</a>.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

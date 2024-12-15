@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+/* Header Section */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 2rem;
+}
+.theme-toggle button {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Dashboard Section */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5rem auto;
+    width: 90%;
+    gap: 1rem;
+    position: relative;
+    height: fit-content;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    margin: 1rem;
+}
+.card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+.card p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #444;
+    margin: 0;
+}
+/* Add Transaction Section */
+.add-transaction {
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+}
+.add-transaction h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.add-transaction form {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+form input, form select, form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+}
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+form button:hover {
+    background: #444;
+}
+/* Recent Transactions Section */
+.recent-transactions {
+    width: 90%;
+    margin: 2rem auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+table th {
+    background: #333;
+    color: #fff;
+}
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+table tr:hover {
+    background-color: #f1f1f1;
+}
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        max-width: 100%;
+    }
+    .add-transaction form {
+        flex-direction: column;
+    }
+    table th, table td {
+        font-size: 0.9rem;
+    }
+}
+
+/* Added styles for the save button */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.form-actions button {
+    flex: 1;
+    margin-right: 0.5rem;
+}
+
+.form-actions button:last-child {
+    margin-right: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f5f5f5;
+}
