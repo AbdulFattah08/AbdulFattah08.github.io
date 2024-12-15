@@ -8,14 +8,12 @@ MyFinance Tracker is a sleek and intuitive personal finance management tool that
         Add transactions with details like date, category, type (income/expense), and amount.
     Recent Transactions:
         View a detailed table of all your transactions, complete with sortable columns and actionable options.
-    Light & Dark Mode:
-        Seamlessly toggle between light and dark themes for a personalized experience.
 
 🎨 Responsive Design:
 
  Fully responsive layout optimized for mobile, tablet, and desktop devices.
 
 🛠️ Built With
-    HTML5: Semantic and accessible markup for a strong structure.
-    CSS3: Clean and responsive styling with hover effects and transitions.
+    HTML: Semantic and accessible markup for a strong structure.
+    CSS: Clean and responsive styling with hover effects and transitions.
     JavaScript: Functional and interactive features, including dynamic updates and form handling.
